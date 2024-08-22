@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
 </head>
+<header class="header">
+    <nav class="header__menu">
+      <a class="header__menu__link">ENCRIPTADOR DE TEXTO</a
+      <a></a>
+    </nav>
+  </header>
 <body>
-    
+    <main class="content">
+      <section class="section1">
+        <img class="ImgEncript" src="./assets/Encriplogo.png" alt="Gestion incidentes TI" />
+        <a class="titulo__destaque">Ingresa el texto aqui:</a>
+        <a class="section1__texto">No ingresar mayúsculas ni caracteres especiales.</a>
+        <div>
+          <textarea class="input" id="texto" type="text"></textarea>
+          <label for="texto"></label>
+          <button class="botones__section1" onclick="encriptar()">Encriptar</button>
+          <button class="botones__section1" onclick="desencriptar()">Desencriptar</button>
+        </div>
+      </section>
+      <section class="section2">
+        <img class="ImgEncript" src="./assets/personaje.png" alt="Gestion incidentes TI" />
+        <label class="titulo__destaque">Resultado 🔒</label>
+        <textarea id="resultado" class="text_area" readonly placeholder="Aqui veras tu texto encriptado"></textarea>
+        <label for="texto" id="resultado"></label>
+        <button Class="botones__section2" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
 </body>
+<footer class="footer">
+  <p>Desarrollado por Victor Herrera Prieto E-mail: vherreraprieto@alumnoeseit.edu.co año: 2024</p>
+</footer>
 </html>
