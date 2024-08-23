@@ -30,6 +30,7 @@
   text-align: center;
   justify-content: center;
   font-family: var(--fuente-Press);
+  font-size: var(--fuente-size);
 }
 
 .header:hover {
@@ -42,8 +43,7 @@
 }
 
 .header__menu__link {
-  font-family: var(--fuente-Press);
-  font-size: var(--fuente-size);
+  font-size: 50%;
   font-weight: 600;
   padding: 0px 25px;
   text-decoration: none;
@@ -225,6 +225,10 @@ body {
   font-weight: 200;
 }
 
+.footer__text {
+  font-size: 60%;
+}
+
 @media (max-width: 1200px) {
   .content {
     flex-direction: column;
@@ -232,10 +236,12 @@ body {
   }
 
   .section1 {
+    width: 80%;
     height: 45%;
   }
 
   .section2 {
+    width: 80%;
     height: 45%;
   }
   .ImgEncript {
